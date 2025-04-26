@@ -39,6 +39,7 @@ public class TreinoHashMapSetELinkedHashMap {
 
         int[] numeros = {1, 2, 2, 3, 3, 3, 4};
 
+
         Map<Integer, Integer> counter = new HashMap<>();
 
         for (int numero : numeros) {

@@ -7,5 +7,6 @@ public class CountByX {
     public static void main(String[] args) {
         // https://www.codewars.com/kata/5513795bd3fafb56c200049e/train/java
         // eu fiz mas não deu para colar aqui
+        System.out.println(9^12);
     }
 }

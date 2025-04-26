@@ -4,6 +4,21 @@ import java.util.Arrays;
 
 public class EstudoArrays {
     public static void main(String[] args) {
+        int[] nums1 = {1,2,3,0,0,0};
+        int m = 3;
+        int[] nums2 = {2,5,6};
+        int n = 3;
+
+
+        for(int i =(m-1); i < nums1.length-1; i++){
+            System.out.println(nums2[i-n+1]);
+            nums1[i+1] = nums2[i-n+1];
+        }
+        Arrays.sort(nums1);
+        System.out.println(nums1);
+    }
+
+    private static void aaaa() {
         String str = "Java";
         str = str.concat(" Rocks");
         System.out.println(str);
