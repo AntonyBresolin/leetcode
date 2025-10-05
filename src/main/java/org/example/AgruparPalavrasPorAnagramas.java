@@ -4,9 +4,7 @@ import java.util.*;
 
 public class AgruparPalavrasPorAnagramas {
 
-    public static void main(String[] args) {
-        String[] palavras = {"roma", "amor", "casa", "saca", "mar", "ram"};
-
+    public static Map<String, List<String>> agrupadorDeAnagramas(String[] palavras) {
         Map<String, List<String>> anagramas = new HashMap<>();
 
         for (String palavra : palavras) {
@@ -17,7 +15,6 @@ public class AgruparPalavrasPorAnagramas {
             anagramas.putIfAbsent(chave, new ArrayList<>());
             anagramas.get(chave).add(palavra);
         }
-
-        System.out.println(anagramas);
+        return anagramas;
     }
 }

@@ -1,12 +1,7 @@
 package org.example;
 
 public class Palindrome {
-    public static void main(String[] args) {
-        int x = 121;
-        System.out.println(isPalindrome(x));
-    }
-
-    private static boolean isPalindrome(int x) {
+    public static boolean isPalindrome(int x) {
         if (x < 0) {
             return false;
         }

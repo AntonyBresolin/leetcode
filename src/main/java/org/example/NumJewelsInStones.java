@@ -4,9 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class NumJewelsInStones {
-    public static void main(String[] args) {
-        String jewels = "aA";
-        String stones = "aAAbbbb";
+    public static int returnNumJewelsInStones(String jewels, String stones) {
         Map<Character, Integer> jewelsMap = new HashMap<>();
         int countFound = 0;
         for(char caracter : jewels.toCharArray()) {
@@ -16,6 +14,6 @@ public class NumJewelsInStones {
             if(jewelsMap.containsKey(stone)){ countFound++;}
         }
 
-        System.out.println(countFound);
+        return countFound;
     }
 }
